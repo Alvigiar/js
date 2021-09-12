@@ -7,6 +7,11 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.39.2",
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1",
+    "swiper": "^7.0.5"
   }
 }

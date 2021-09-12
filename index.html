@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testing</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <section class="tariff">
+      <div class="tariff__head tariff-head">
+        <span class="tariff-head__title">Тарифы</span>
+        <span class="tariff-head__subtitle">Стоимость зависит от трафика сайта</span>
+      </div>
+      <div class="tariff__choice tariff-choise">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Бесплатно
+              </span>
+              <span class="tariff-option__text">
+                Пробный период на 1 месяц
+              </span>
+              <span class="tariff-option__price">
+                0₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 0₽</button>
+            </div>
+
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Базовый
+              </span>
+              <span class="tariff-option__text">
+                Менее 1000 посещений в сутки
+              </span>
+              <span class="tariff-option__price">
+                200₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 200₽</button>
+            </div>
+
+            <div class="swiper-slide tariff-choise__option tariff-option">
+              <span class="tariff-option__title">
+                Премиум
+              </span>
+              <span class="tariff-option__text">
+                Более 1000 посещений в сутки
+              </span>
+              <span class="tariff-option__price">
+                500₽/первый месяц
+              </span>
+              <button class="tariff-option__connect">Подключить за 500₽</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

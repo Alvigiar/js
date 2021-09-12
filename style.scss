@@ -1,14 +1,13 @@
-body{
+body {
   margin: 0;
   padding: 0;
   display: grid;
   justify-content: center;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   margin: 15px;
-  width: 100%;
   align-items: center;
   justify-items: center;
 }
@@ -87,7 +86,7 @@ body{
     }
   }
 
-  &__select{
+  &__select {
     grid-column: 2;
     text-align: center;
   }
@@ -101,10 +100,19 @@ body{
   }
 }
 
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-pagination-horizontal{
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1110px;
+  }
 }
